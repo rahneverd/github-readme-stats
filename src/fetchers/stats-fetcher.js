@@ -136,7 +136,7 @@ const statsFetcher = async ({
       return res;
     }
 
-    console.log(res.data)
+    console.log(JSON.stringify(res.data))
 
     // Store stats data.
     const repoNodes = res.data.data.user.repositories.nodes;
