@@ -67,7 +67,7 @@ export default async (req, res) => {
       }),
     );
   }
-
+// just for deployment
   try {
     const showStats = parseArray(show);
     const stats = await fetchStats(
