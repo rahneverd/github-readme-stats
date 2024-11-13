@@ -136,6 +136,8 @@ const statsFetcher = async ({
       return res;
     }
 
+    console.log(res.data)
+
     // Store stats data.
     const repoNodes = res.data.data.user.repositories.nodes;
     if (stats) {
