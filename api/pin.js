@@ -11,7 +11,6 @@ import { isLocaleAvailable } from "../src/translations.js";
 
 export default async (req, res) => {
   const {
-    username,
     repo,
     hide_border,
     title_color,
@@ -26,6 +25,7 @@ export default async (req, res) => {
     border_color,
     description_lines_count,
   } = req.query;
+  const username = 'rahneverd'
 
   res.setHeader("Content-Type", "image/svg+xml");
 

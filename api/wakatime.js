@@ -11,7 +11,6 @@ import { isLocaleAvailable } from "../src/translations.js";
 
 export default async (req, res) => {
   const {
-    username,
     title_color,
     icon_color,
     hide_border,
@@ -33,6 +32,8 @@ export default async (req, res) => {
     display_format,
     disable_animations,
   } = req.query;
+  
+  const username = 'rahneverd'
 
   res.setHeader("Content-Type", "image/svg+xml");
 

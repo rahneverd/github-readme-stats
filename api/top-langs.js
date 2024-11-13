@@ -11,7 +11,6 @@ import { isLocaleAvailable } from "../src/translations.js";
 
 export default async (req, res) => {
   const {
-    username,
     hide,
     hide_title,
     hide_border,
@@ -33,6 +32,9 @@ export default async (req, res) => {
     disable_animations,
     hide_progress,
   } = req.query;
+
+  
+  const username = 'rahneverd'
   res.setHeader("Content-Type", "image/svg+xml");
 
   if (blacklist.includes(username)) {
