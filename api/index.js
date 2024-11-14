@@ -31,7 +31,6 @@ export default async (req, res) => {
     border_radius,
     number_format,
     border_color,
-    rank_icon,
     show,
   } = req.query;
 
@@ -41,6 +40,7 @@ export default async (req, res) => {
   const include_all_commits=true
   const theme='buefy'
   const hide_border=true
+  const rank_icon="percentile"
   
   // ?&
   
