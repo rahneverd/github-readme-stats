@@ -39,7 +39,7 @@ export default async (req, res) => {
   const username = 'rahneverd'
   const show_icons = true
   const include_all_commits=true
-  const theme=buefy
+  const theme='buefy'
   const hide_border=true
   
   // ?&
