@@ -14,11 +14,8 @@ export default async (req, res) => {
   const {
     hide,
     hide_title,
-    hide_border,
     card_width,
     hide_rank,
-    show_icons,
-    include_all_commits,
     line_height,
     title_color,
     ring_color,
@@ -26,7 +23,6 @@ export default async (req, res) => {
     text_color,
     text_bold,
     bg_color,
-    theme,
     cache_seconds,
     exclude_repo,
     custom_title,
@@ -41,6 +37,12 @@ export default async (req, res) => {
 
   
   const username = 'rahneverd'
+  const show_icons = true
+  const include_all_commits=true
+  const theme=buefy
+  const hide_border=true
+  
+  // ?&
   
   res.setHeader("Content-Type", "image/svg+xml");
 
